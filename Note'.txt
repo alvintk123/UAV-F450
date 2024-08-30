@@ -1,0 +1,44 @@
+Data được gửi từ app xuống board
+2 data is separately
+Data sending for Tuning: 
+
+Data Sending for Control: 38 bit	
+ConnectDrone	   : 1 bit
+Start Calib Sensor : 1 bit
+Start read Sensor  : 1 bit
+Start Calib Motor  : 1 bit
+start/stop motor   : 1 bit
+Get Res		   : 1 bit
+Get Plot 3D Ani    : 1 bit
+Get Plot Ref&Res   : 1 bit
+
+VV Cmd 	           : 8 bit
+YR Cmd 	           : 8 bit
+RA Cmd 	           : 8 bit
+PA Cmd 	           : 8 bit
+
+Data được gửi từ board lên app
+connectDroneFlag   : %1d  (0: Chưa connect, 1: connect)
+Calib Sensor: %1d (0: chưa calib, 1: đang calib, 2: đã calib)
+readSensor: %1d (0: chưa start,  1: đã start)
+Calib motor: %1d (0: chưa calib, 1: đang calib, 2: đã calib)
+Start motor: %1d (0: chưa start, 1: đã start)
+Res  : %1d (0: Chưa gửi data, 1: đã gửi data)
+Plot : %1d (0: Chưa gửi data, 1: đã gửi data)
+Plot : %1d (0: Chưa gửi data, 1: đã gửi data)
+
+
+Data được gửi kèm theo tùy vào yêu cầu
+
+rollAng:    %2.1f
+pitchAng:   %2.1f
+yawAng:     %2.1f
+VV:  	    %2.1f
+YawRateAng: %2.1f
+
+Motor1: %5.1f
+Motor2: %5.1f
+Motor3: %5.1f
+Motor4: %5.1f
+
+Feedback data được gửi từ board phải luôn chừa mấy bit đầu và gửi liên tục để xác nhận là có dữ liệu nào đang được truyền tới

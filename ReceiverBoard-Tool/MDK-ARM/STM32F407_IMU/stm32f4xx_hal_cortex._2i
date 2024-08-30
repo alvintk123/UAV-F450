@@ -1,0 +1,9 @@
+--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include
+-I.\RTE\CMSIS
+-I.\RTE\_STM32F407_IMU
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\RTOS2\Include
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\RTOS2\RTX\Include
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DSTM32_THREAD_SAFE_STRATEGY="2"
+-o stm32f407_imu\stm32f4xx_hal_cortex.o --omf_browse stm32f407_imu\stm32f4xx_hal_cortex.crf --depend stm32f407_imu\stm32f4xx_hal_cortex.d --feedback "STM32F407_IMU\STM32F407_IMU.fed" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
